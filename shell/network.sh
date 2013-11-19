@@ -16,3 +16,8 @@ try_ping() {
   done
   return $rc
 }
+
+google() {
+  # 用于命令行google查询，或其他固定rest url后接的查询字符
+  google-chrome http://www.google.com/search?q=$1
+}
